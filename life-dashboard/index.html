@@ -1,0 +1,63 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Life Dashboard</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>✨ My Life Dashboard</h1>
+
+    <!-- CLOCK -->
+    <div class="card">
+      <h2>🕒 Jam Sekarang</h2>
+      <div id="clock">00:00:00</div>
+    </div>
+
+    <!-- TODO LIST -->
+    <div class="card">
+      <h2>✅ To-Do List</h2>
+
+      <div class="todo-input">
+        <input type="text" id="todoInput" placeholder="Tambah tugas...">
+        <button onclick="addTask()">Tambah</button>
+      </div>
+
+      <ul id="todoList"></ul>
+    </div>
+
+    <!-- FOCUS TIMER -->
+    <div class="card">
+      <h2>⏳ Focus Timer</h2>
+
+      <div id="timer">25:00</div>
+
+      <div class="timer-buttons">
+        <button onclick="startTimer()">Start</button>
+        <button onclick="pauseTimer()">Pause</button>
+        <button onclick="resetTimer()">Reset</button>
+      </div>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div class="card">
+      <h2>🌐 Quick Links</h2>
+
+      <div class="links">
+        <a href="https://google.com" target="_blank">Google</a>
+        <a href="https://youtube.com" target="_blank">YouTube</a>
+        <a href="https://chat.openai.com" target="_blank">ChatGPT</a>
+        <a href="https://github.com" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
